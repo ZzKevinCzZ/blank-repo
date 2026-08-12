@@ -1,5 +1,6 @@
 // Function to convert bytes to human-readable format
-function bytesToSize(bytes) {
+// Add the export keyword to make the function available
+export function bytesToSize(bytes) {
 const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
 if (bytes === 0) return '0 Byte';
 const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
